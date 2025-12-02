@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 486324565}
   - component: {fileID: 486324567}
   m_Layer: 0
-  m_Name: rrr
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -565,6 +565,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c289f28d8011cc49a716d993d74e4a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsInvulnerable: 1
+  MoveSpeed: 10
 --- !u!212 &1358768836
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -610,7 +612,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.43867922, g: 1, b: 0.8957158, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
