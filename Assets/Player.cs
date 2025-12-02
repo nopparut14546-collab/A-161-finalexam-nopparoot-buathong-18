@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class _Script : MonoBehaviour
+public class Player : MonoBehaviour
 {
     [SerializeField] public bool IsInvulnerable;
 
@@ -17,9 +17,9 @@ public class _Script : MonoBehaviour
         newSpeed = MoveSpeed;
     }
 
-    public void SetInvulnerability(bool IsInvulnerable)
+    public void SetInvulnerability(bool IsEnabled)        
     {
-        if (IsInvulnerable == true)
+        if (!IsEnabled)
         {
             Debug.Log("Player is Immune to All Damage.");
         }
@@ -27,6 +27,11 @@ public class _Script : MonoBehaviour
         {
             Debug.Log("Player is NOT immune.");
         }
+    }
+
+    public void OnTriggerEnter2D()
+    {
+
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
